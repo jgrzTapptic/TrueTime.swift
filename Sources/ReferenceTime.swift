@@ -12,7 +12,7 @@ typealias FrozenTimeCallback = (FrozenTimeResult) -> Void
 typealias FrozenNetworkTimeResult = Result<FrozenNetworkTime, NSError>
 typealias FrozenNetworkTimeCallback = (FrozenNetworkTimeResult) -> Void
 
-protocol FrozenTime {
+public protocol FrozenTime {
     var time: Date { get }
     var uptime: timeval { get }
 }
