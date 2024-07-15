@@ -37,7 +37,7 @@ public final class ReferenceTime: NSObject {
     }
 
     private let underlyingValueLock: GCDLock<FrozenTime>
-    var underlyingValue: FrozenTime {
+    public var underlyingValue: FrozenTime {
         get { return underlyingValueLock.read() }
         set { underlyingValueLock.write(newValue) }
     }
